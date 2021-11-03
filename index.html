@@ -36,7 +36,65 @@
               Age must be between 10 and 100
             </small>
           </div>
+          <div class="form-group">
+            <label for="dropdown"><span class="text-white">Current Role</span></label>
+            <select id="dropdown" class="form-control">
+              <option selected>Select Current Role...</option>
+              <option>Student</option>
+              <option>Employed</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="name" id="radio-label"><span class="text-white">Gender</span></label>
+            <!-- Default radio -->
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+                value="Male"
+              />
+              <label class="form-check-label text-white" for="flexRadioDefault1"> Male </label>
+            </div>
+
+            <!-- Default checked radio -->
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+                value="Female"
+                checked
+              />
+              <label class="form-check-label text-white" for="flexRadioDefault2"> Female </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="name" id="radio-label"><span class="text-white">What would you like to see improved? (Check all that apply)</span></label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Front-End" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                <span class="text-white">Front-End</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Back-End" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                <span class="text-white">Back-End</span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1"><span class="text-white">Comments (if any)</span></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary mb-2" id="submit">Submit</button>
         </form>
+
       </div>
     </div>
     <!--
